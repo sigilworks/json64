@@ -1,0 +1,5 @@
+= Json64
+
+This plugin for Rails adds an extra content renderer, converting a hash into a JSON string, which is then Base64 encoded and sent with the response, where the process can be reversed client-side with JavaScript.
+
+This can be useful in situations where the data may not be used right away (as AJAX-retrieved data often is), or as a "seed" embedded in the original page request for single-page apps.  The Base64-encoded data is compact and can be stored away in a hidden <input> field on the page, and decoded and exploded later, or used as a reference for state retrieval at a later point.
